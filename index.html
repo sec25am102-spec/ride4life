@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride4Life | Connecting Mobility with Life-Saving Blood Donation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">❤️ Ride4Life</div>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#how">How It Works</a>
+      <a href="#register">Register</a>
+      <a href="#dashboard">Dashboard</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="badge">🚑 SMART BLOOD EMERGENCY PLATFORM</span>
+
+    <h1>Connecting <span>Mobility</span> with Life-Saving Blood Donation</h1>
+
+    <p>
+      Ride4Life connects blood donors, hospitals and mobility volunteers
+      to help donors reach hospitals quickly during blood emergencies.
+    </p>
+
+    <div class="buttons">
+      <a href="#register" class="btn primary">Become a Donor ❤️</a>
+      <a href="#how" class="btn secondary">How It Works →</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="heart">❤️</div>
+    <h2>DONOR → DRIVE → DIFFERENCE</h2>
+    <p>Every timely ride can bring a donor closer to saving a life.</p>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <h2>How Ride4Life Works</h2>
+  <p class="subtitle">Four simple steps from emergency request to impact.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="number">01</div>
+      <h3>📢 Request</h3>
+      <p>Hospital raises an urgent blood requirement.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">02</div>
+      <h3>🔎 Match</h3>
+      <p>Ride4Life identifies an available eligible donor.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">03</div>
+      <h3>🚗 Ride</h3>
+      <p>A connected mobility volunteer helps the donor travel.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">04</div>
+      <h3>🏥 Reach</h3>
+      <p>The donor reaches the hospital and follows the normal donation process.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="register" class="section register-section">
+
+  <div class="form-container">
+
+    <h2>Become a Ride4Life Donor ❤️</h2>
+    <p>Register your details and become part of the emergency donor network.</p>
+
+    <form id="donorForm">
+
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <input type="tel" id="phone" placeholder="Mobile Number" required>
+
+      <input type="email" id="email" placeholder="Email Address" required>
+
+      <select id="blood" required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+
+      <input type="text" id="location" placeholder="Your Location" required>
+
+      <select id="availability" required>
+        <option value="">Availability</option>
+        <option>Available Now</option>
+        <option>Available Weekends</option>
+        <option>Available When Needed</option>
+      </select>
+
+      <button type="submit" class="btn primary">Register as Donor ❤️</button>
+
+    </form>
+
+    <div id="successMessage"></div>
+
+  </div>
+</section>
+
+<section id="dashboard" class="section dashboard">
+
+  <h2>Donor Dashboard</h2>
+  <p class="subtitle">Your Ride4Life impact at a glance.</p>
+
+  <div class="dashboard-grid">
+
+    <div class="dash-card">
+      <span>🩸</span>
+      <h3 id="dashBlood">--</h3>
+      <p>Blood Group</p>
+    </div>
+
+    <div class="dash-card">
+      <span>📍</span>
+      <h3 id="dashLocation">--</h3>
+      <p>Location</p>
+    </div>
+
+    <div class="dash-card">
+      <span>⭐</span>
+      <h3 id="points">0</h3>
+      <p>Impact Points</p>
+    </div>
+
+    <div class="dash-card">
+      <span>🏅</span>
+      <h3>Bronze</h3>
+      <p>Current Badge</p>
+    </div>
+
+  </div>
+
+  <div class="emergency">
+
+    <h2>🚨 Current Emergency Requests</h2>
+
+    <div class="request">
+
+      <div>
+        <h3>O+ Blood Required</h3>
+        <p>🏥 Emergency Hospital</p>
+        <p>📍 Chennai</p>
+      </div>
+
+      <button onclick="donate()" class="btn primary">
+        I Can Donate
+      </button>
+
+    </div>
+
+    <div class="request">
+
+      <div>
+        <h3>B+ Blood Required</h3>
+        <p>🏥 City Care Hospital</p>
+        <p>📍 Tambaram</p>
+      </div>
+
+      <button onclick="donate()" class="btn primary">
+        I Can Donate
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <h2>❤️ Ride4Life</h2>
+  <p>Donate. Earn. Impact.</p>
+  <p>© 2026 Ride4Life | HackTrio – Sri Sairam Engineering College</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
